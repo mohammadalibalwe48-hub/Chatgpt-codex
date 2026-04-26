@@ -1,75 +1,182 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>THAER Delivery — Fast, Smart, Everywhere</title>
+    <title>ثائر | منصة توصيل ذكية</title>
+    <meta
+      name="description"
+      content="ثائر - منصة توصيل ذكية وسريعة لإدارة الطلبات وتتبع السائقين وتحسين تجربة العملاء."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="bg-orb orb-1"></div>
-    <div class="bg-orb orb-2"></div>
-    <div class="bg-grid" aria-hidden="true"></div>
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a href="#top" class="logo">ثائر <span>/ THAER</span></a>
 
-    <main class="hero" role="main">
-      <header class="brand" aria-label="Thaer brand">
-        <div class="brand-mark" aria-hidden="true">
-          <svg viewBox="0 0 120 120" role="img" focusable="false">
-            <path
-              d="M62 12L92 30L96 59L70 84L37 74L31 42L62 12Z"
-              fill="currentColor"
-            />
-            <path
-              d="M70 84C61 100 41 108 23 104 12 102 5 94 4 85c4 8 13 13 24 13 17 0 31-11 36-26l6 12Z"
-              fill="currentColor"
-            />
-            <path d="M62 12 58 44 31 42 62 12Z" fill="#3f2a00" opacity="0.2" />
-            <path d="M62 44 92 30 70 56 62 44Z" fill="#3f2a00" opacity="0.2" />
-          </svg>
+        <button class="menu-toggle" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mobileNav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav" id="mobileNav">
+          <a href="#hero">الرئيسية</a>
+          <a href="#features">المميزات</a>
+          <a href="#stats">الشركاء</a>
+          <a href="#footer">تواصل معنا</a>
+          <a href="#cta" class="cta cta-small">ابدأ الآن</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="container hero-grid reveal">
+          <div class="hero-content">
+            <p class="chip">منصة توصيل حديثة</p>
+            <h1>طلباتك بسرعة البرق</h1>
+            <p class="hero-sub">
+              منصة توصيل ذكية تساعدك على إدارة الطلبات، تتبع السائقين، وتحسين تجربة العملاء بسهولة.
+            </p>
+            <div class="hero-actions">
+              <button class="cta" data-cta="start">ابدأ الآن</button>
+              <button class="cta cta-light" data-cta="signup">إنشاء حساب جديد</button>
+            </div>
+            <div class="trust-list">
+              <div><strong>+5K</strong><span>طلب</span></div>
+              <div><strong>4.9</strong><span>تقييم</span></div>
+              <div><strong>30 دقيقة</strong><span>متوسط التوصيل</span></div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="phone-card">
+              <div class="map-dot"></div>
+              <div class="route"></div>
+              <div class="scooter">🛵</div>
+            </div>
+            <div class="lightning">⚡</div>
+          </div>
         </div>
-        <span class="divider" aria-hidden="true"></span>
-        <h1>THAER</h1>
-      </header>
-
-      <nav class="top-nav" aria-label="Primary navigation">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="tracking.html">Tracking</a>
-        <a href="restaurants.html">Restaurants</a>
-        <a href="support.html">Support</a>
-      </nav>
-
-      <p class="tagline">Delivering joy in <span>15 minutes</span> or less.</p>
-
-      <section class="status-card" aria-label="Live delivery status">
-        <div class="pulse-dot" aria-hidden="true"></div>
-        <p>Order #T-9218 is on the way to <strong>Riyadh Front</strong></p>
       </section>
 
-      <section class="features" aria-label="Service highlights">
-        <article>
-          <h2>Ultra Fast</h2>
-          <p>AI-routed couriers optimize every street turn in real time.</p>
-        </article>
-        <article>
-          <h2>Live Tracking</h2>
-          <p>Watch your package move with smooth second-by-second updates.</p>
-        </article>
-        <article>
-          <h2>Always Safe</h2>
-          <p>Smart lockers and verified riders protect each delivery.</p>
-        </article>
+      <section class="section" id="features">
+        <div class="container reveal">
+          <h2>تجربة استثنائية</h2>
+          <p class="section-sub">كل ما تحتاجه لإدارة التوصيل بسهولة وسرعة.</p>
+          <div class="grid cards-3">
+            <article class="card"><h3>توصيل فوري</h3><p>استلم طلبك خلال 30-45 دقيقة فقط</p></article>
+            <article class="card"><h3>عروض وخصومات</h3><p>استفد من عروض يومية وحصرية</p></article>
+            <article class="card"><h3>آمن ومضمون</h3><p>نظام دفع وتتبع موثوق</p></article>
+            <article class="card"><h3>أفضل المتاجر</h3><p>اختر من أفضل المطاعم والمتاجر</p></article>
+            <article class="card"><h3>تتبع حي</h3><p>اعرف مكان طلبك لحظة بلحظة</p></article>
+            <article class="card"><h3>سهل الاستخدام</h3><p>واجهة بسيطة وسريعة للجميع</p></article>
+          </div>
+        </div>
       </section>
 
-      <a class="cta" href="tracking.html" aria-label="Start tracking with Thaer">
-        Track an Order
-        <span aria-hidden="true">→</span>
-      </a>
+      <section class="section" id="stats">
+        <div class="container reveal">
+          <h2>نمو مستمر، شراكات ناجحة</h2>
+          <div class="stats-grid">
+            <div class="stat"><span>+120</span><p>متجر</p></div>
+            <div class="stat"><span>+80</span><p>سائق</p></div>
+            <div class="stat"><span>+1</span><p>مدينة</p></div>
+            <div class="stat"><span>+5K</span><p>طلب</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="testimonials">
+        <div class="container reveal">
+          <h2>سعداء بكل طلب</h2>
+          <div class="grid cards-3 testimonials">
+            <article class="card quote"><div class="stars">★★★★★</div><p>تجربة ممتازة، الطلب وصل بسرعة والتطبيق سهل الاستخدام.</p></article>
+            <article class="card quote"><div class="stars">★★★★★</div><p>خدمة رائعة وسائق محترف، أنصح بالتجربة.</p></article>
+            <article class="card quote"><div class="stars">★★★★★</div><p>أفضل تطبيق توصيل استخدمته، سريع وواضح.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="users">
+        <div class="container reveal">
+          <h2>كن جزءًا من عائلة ثائر</h2>
+          <div class="grid cards-3">
+            <article class="card user-card">
+              <h3>للمطاعم والمتاجر</h3>
+              <p>وسّع مبيعاتك وانضم إلى شبكة ثائر.</p>
+              <ul>
+                <li>استقبال طلبات بسهولة</li>
+                <li>إدارة المنتجات</li>
+                <li>تقارير ومتابعة</li>
+              </ul>
+              <button class="cta cta-small" data-cta="merchant">سجل متجرك الآن</button>
+            </article>
+            <article class="card user-card">
+              <h3>للسائقين</h3>
+              <p>اربح أكثر مع كل طلب.</p>
+              <ul>
+                <li>طلبات قريبة منك</li>
+                <li>تتبع واضح</li>
+                <li>أرباح مرنة</li>
+              </ul>
+              <button class="cta cta-small" data-cta="driver">انضم كسائق الآن</button>
+            </article>
+            <article class="card user-card">
+              <h3>للموظفين</h3>
+              <p>انضم إلى فريق عمل ثائر.</p>
+              <ul>
+                <li>فرص عمل متنوعة</li>
+                <li>بيئة عمل مرنة</li>
+                <li>نمو مستمر</li>
+              </ul>
+              <button class="cta cta-small" data-cta="team">انضم للفريق</button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="final-cta" id="cta">
+        <div class="container reveal">
+          <h2>ثائر بين يديك</h2>
+          <p>حمّل التطبيق أو ابدأ رحلتك معنا اليوم.</p>
+          <div class="hero-actions">
+            <button class="cta" data-cta="start">ابدأ الآن</button>
+            <button class="cta cta-light" data-cta="contact">تواصل معنا</button>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer" id="footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="#top" class="logo">ثائر <span>/ THAER</span></a>
+          <p>منصة توصيل ذكية وسريعة لخدمة العملاء والمتاجر والسائقين.</p>
+        </div>
+        <nav class="footer-links">
+          <a href="#hero">الرئيسية</a>
+          <a href="#features">المميزات</a>
+          <a href="#stats">الشركاء</a>
+          <a href="#cta">تواصل معنا</a>
+        </nav>
+        <div class="socials" aria-label="روابط التواصل">
+          <a href="#" aria-label="Instagram">◉</a>
+          <a href="#" aria-label="X">✕</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+      <p class="copyright">© 2026 ثائر - جميع الحقوق محفوظة.</p>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
