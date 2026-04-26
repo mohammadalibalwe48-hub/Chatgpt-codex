@@ -194,6 +194,40 @@ h2 {
   box-shadow: 0 16px 36px rgba(246, 195, 39, 0.45);
 }
 
+
+
+.page-body {
+  overflow: auto;
+  padding: 2rem 0;
+}
+
+.page-layout {
+  max-width: 980px;
+}
+
+.top-nav {
+  margin: 1rem 0 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: rgba(248, 247, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  padding: 0.45rem 0.85rem;
+  font-size: 0.9rem;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.top-nav a:hover,
+.top-nav a[aria-current="page"] {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  transform: translateY(-1px);
+}
 @keyframes ping {
   70% {
     box-shadow: 0 0 0 10px rgba(53, 230, 107, 0);
