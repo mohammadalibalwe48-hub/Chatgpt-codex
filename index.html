@@ -3,16 +3,66 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Simple Website</title>
+    <title>THAER Delivery — Fast, Smart, Everywhere</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="container">
-      <h1>Welcome to My Simple Website</h1>
-      <p>
-        This is a clean, lightweight starter page built with HTML and CSS.
-      </p>
-      <a class="button" href="#" aria-label="Learn more">Learn More</a>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <main class="hero" role="main">
+      <header class="brand" aria-label="Thaer brand">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 120 120" role="img" focusable="false">
+            <path
+              d="M62 12L92 30L96 59L70 84L37 74L31 42L62 12Z"
+              fill="currentColor"
+            />
+            <path
+              d="M70 84C61 100 41 108 23 104 12 102 5 94 4 85c4 8 13 13 24 13 17 0 31-11 36-26l6 12Z"
+              fill="currentColor"
+            />
+            <path d="M62 12 58 44 31 42 62 12Z" fill="#3f2a00" opacity="0.2" />
+            <path d="M62 44 92 30 70 56 62 44Z" fill="#3f2a00" opacity="0.2" />
+          </svg>
+        </div>
+        <span class="divider" aria-hidden="true"></span>
+        <h1>THAER</h1>
+      </header>
+
+      <p class="tagline">Delivering joy in <span>15 minutes</span> or less.</p>
+
+      <section class="status-card" aria-label="Live delivery status">
+        <div class="pulse-dot" aria-hidden="true"></div>
+        <p>Order #T-9218 is on the way to <strong>Riyadh Front</strong></p>
+      </section>
+
+      <section class="features" aria-label="Service highlights">
+        <article>
+          <h2>Ultra Fast</h2>
+          <p>AI-routed couriers optimize every street turn in real time.</p>
+        </article>
+        <article>
+          <h2>Live Tracking</h2>
+          <p>Watch your package move with smooth second-by-second updates.</p>
+        </article>
+        <article>
+          <h2>Always Safe</h2>
+          <p>Smart lockers and verified riders protect each delivery.</p>
+        </article>
+      </section>
+
+      <a class="cta" href="#" aria-label="Start delivering with Thaer">
+        Start Delivery
+        <span aria-hidden="true">→</span>
+      </a>
     </main>
   </body>
 </html>
